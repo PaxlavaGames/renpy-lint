@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update
-RUN apt-get install --yes bzip2 wget libxext6 mesa-utils
+RUN apt-get install --yes libxext6 mesa-utils
 
 COPY entrypoint.sh /entrypoint.sh
 
