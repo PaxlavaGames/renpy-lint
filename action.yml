@@ -1,0 +1,16 @@
+name: "RenPy Install"
+author: 'PaxlavaGames'
+description: "Download RenPy SDK"
+inputs:
+  version:
+    description: "SDK version"
+    required: false
+    default: "8.1.3"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.version }}
+branding:
+  color: 'purple'
+  icon: 'arrow-down'
