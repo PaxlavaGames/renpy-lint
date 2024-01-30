@@ -1,4 +1,4 @@
-name: Install RenPy
+name: Lint RenPy
 
 on:
   push:
@@ -9,9 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install RenPy
-      uses: PaxlavaGames/renpy-install@main
+      uses: PaxlavaGames/renpy-install@v0.1.2
       with:
         version: "8.1.3"
-    - name: Check folders
-      run: |
-        ls
+    - name: Lint RenPy
+      uses: PaxlavaGames/renpy-lint@main

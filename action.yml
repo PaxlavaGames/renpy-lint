@@ -1,16 +1,16 @@
-name: "RenPy Install"
+name: "RenPy Lint"
 author: 'PaxlavaGames'
-description: "Download RenPy SDK"
+description: "GitHub action to lint project on RenPy"
 inputs:
-  version:
-    description: "SDK version"
+  path:
+    description: "RenPy project path"
     required: false
-    default: "8.1.3"
+    default: "."
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.version }}
+    - ${{ inputs.path }}
 branding:
-  color: 'purple'
-  icon: 'arrow-down'
+  color: 'green'
+  icon: 'check-square'

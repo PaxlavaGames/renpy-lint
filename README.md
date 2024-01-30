@@ -1,39 +1,39 @@
-# RenPy Install
+# RenPy Lint
 
-GitHub action to download and unzip **RenPy SDK** for future using
+GitHub action to lint project on **RenPy** 
 
 #### Support
 [![Documentation](https://img.shields.io/badge/docs-0094FF.svg)][documentation_path]
-[![Discussions](https://img.shields.io/badge/discussions-ff0068.svg)](https://github.com/PaxlavaGames/renpy-install/discussions/)
-[![Issues](https://img.shields.io/badge/issues-11AE13.svg)](https://github.com/PaxlavaGames/renpy-install/issues/)
+[![Discussions](https://img.shields.io/badge/discussions-ff0068.svg)](https://github.com/PaxlavaGames/renpy-lint/discussions/)
+[![Issues](https://img.shields.io/badge/issues-11AE13.svg)](https://github.com/PaxlavaGames/renpy-lint/issues/)
 
 #### Development
-[![Last Commit](https://img.shields.io/github/last-commit/PaxlavaGames/renpy-install/main
-)](https://github.com/PaxlavaGames/renpy-install)
-- [![Issues](https://img.shields.io/github/issues/PaxlavaGames/renpy-install
-)](https://github.com/PaxlavaGames/renpy-install/issues/)
-[![Closed Issues](https://img.shields.io/github/issues-closed/PaxlavaGames/renpy-install
-)](https://github.com/PaxlavaGames/renpy-install/issues/)
-- [![Pull Requests](https://img.shields.io/github/issues-pr/PaxlavaGames/renpy-install
-)](https://github.com/PaxlavaGames/renpy-install/pulls)
-[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed-raw/PaxlavaGames/renpy-install
-)](https://github.com/PaxlavaGames/renpy-install/pulls)
-- [![Discussions](https://img.shields.io/github/discussions/PaxlavaGames/renpy-install
-)](https://github.com/PaxlavaGames/renpy-install/discussions/)
+[![Last Commit](https://img.shields.io/github/last-commit/PaxlavaGames/renpy-lint/main
+)](https://github.com/PaxlavaGames/renpy-lint)
+- [![Issues](https://img.shields.io/github/issues/PaxlavaGames/renpy-lint
+)](https://github.com/PaxlavaGames/renpy-lint/issues/)
+[![Closed Issues](https://img.shields.io/github/issues-closed/PaxlavaGames/renpy-lint
+)](https://github.com/PaxlavaGames/renpy-lint/issues/)
+- [![Pull Requests](https://img.shields.io/github/issues-pr/PaxlavaGames/renpy-lint
+)](https://github.com/PaxlavaGames/renpy-lint/pulls)
+[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed-raw/PaxlavaGames/renpy-lint
+)](https://github.com/PaxlavaGames/renpy-lint/pulls)
+- [![Discussions](https://img.shields.io/github/discussions/PaxlavaGames/renpy-lint
+)](https://github.com/PaxlavaGames/renpy-lint/discussions/)
 
 [//]: # (#### Repository Stats)
 
-[//]: # ([![Stars]&#40;https://img.shields.io/github/stars/PaxlavaGames/renpy-install)
+[//]: # ([![Stars]&#40;https://img.shields.io/github/stars/PaxlavaGames/renpy-lint)
 
-[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-install&#41;)
+[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-lint&#41;)
 
-[//]: # ([![Contributors]&#40;https://img.shields.io/github/contributors/PaxlavaGames/renpy-install)
+[//]: # ([![Contributors]&#40;https://img.shields.io/github/contributors/PaxlavaGames/renpy-lint)
 
-[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-installgraphs/contributors&#41;)
+[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-lintgraphs/contributors&#41;)
 
-[//]: # ([![Forks]&#40;https://img.shields.io/github/forks/PaxlavaGames/renpy-install)
+[//]: # ([![Forks]&#40;https://img.shields.io/github/forks/PaxlavaGames/renpy-lint)
 
-[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-install&#41;)
+[//]: # (&#41;]&#40;https://github.com/PaxlavaGames/renpy-lint&#41;)
 
 <hr>
 
@@ -52,10 +52,8 @@ GitHub action to download and unzip **RenPy SDK** for future using
 
 ### Run using stable version
 
-#### With params
-
 ```yaml
-name: Install RenPy
+name: Lint RenPy
 
 on:
   push:
@@ -69,17 +67,20 @@ jobs:
       uses: PaxlavaGames/renpy-install@v0.1.2
       with:
         version: "8.1.3"
+    - name: Lint RenPy
+      uses: PaxlavaGames/renpy-lint@v0.1.0
 ```
 
 ### Run using last version (maybe unstable)
 
 ```yaml
 uses: PaxlavaGames/renpy-install@main
+uses: PaxlavaGames/renpy-lint@main
 ```
 
 ## Mission
 
-To provide quickstart with open source repository what contains GitHub action
+To create useful and user-friendly GitHub action for **RenPy** projects
 
 ## Open Source Project
 
@@ -88,7 +89,8 @@ Be free to use, fork, clone and contribute.
 
 ## Features
 
-Download and unzip **RenPy** SDK for feature using
+Lint **RenPy** project
+To build **RenPy** project use `renpy-build`
 
 ## Development Status
 
@@ -112,4 +114,4 @@ You are welcome! To easy start please check:
 
 Empty yet
 
-[documentation_path]: https://github.com/PaxlavaGames/renpy-install
+[documentation_path]: https://github.com/PaxlavaGames/renpy-lint

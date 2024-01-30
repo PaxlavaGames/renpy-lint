@@ -6,7 +6,7 @@
 - [x] [State What the Project Is Free](https://github.com/libresource/open-source-checklist#state-what-the-project-is-free)
 - [x] [Features](https://github.com/libresource/open-source-checklist#features)
 - [x] [Requirements](https://github.com/libresource/open-source-checklist#requirements)
-- [ ] [Development Status](https://github.com/libresource/open-source-checklist#development-status)
+- [x] [Development Status](https://github.com/libresource/open-source-checklist#development-status)
 - [x] [Download Page](https://github.com/libresource/open-source-checklist#download-page)
 - [x] [Version Control Access](https://github.com/libresource/open-source-checklist#version-control-access)
 - [x] [Bug Tracker Access](https://github.com/libresource/open-source-checklist#bug-tracker-access)
