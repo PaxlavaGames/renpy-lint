@@ -40,6 +40,7 @@ GitHub action to lint project on **RenPy**
 ## Menu
 
 - [Quickstart](#quickstart)
+- [Parameters](#parameters)
 - [Mission](#mission)
 - [Open Source Project](#open-source-project)
 - [Features](#features)
@@ -68,7 +69,7 @@ jobs:
       with:
         version: "8.1.3"
     - name: Lint RenPy
-      uses: PaxlavaGames/renpy-lint@v0.1.0
+      uses: PaxlavaGames/renpy-lint@v0.2.0
 ```
 
 ### Run using last version (maybe unstable)
@@ -76,6 +77,38 @@ jobs:
 ```yaml
 uses: PaxlavaGames/renpy-install@main
 uses: PaxlavaGames/renpy-lint@main
+```
+
+## Parameters
+
+### Optional parameters
+
+- `path` - path to `renpy` project folder (In this folder there is `game` folder). Default value = `"."` (current directory)  For example in this repository it's `.testing`
+
+### Example usage with parameters
+
+```yaml
+name: Lint RenPy
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install RenPy
+      uses: PaxlavaGames/renpy-install@v0.1.2
+      with:
+        version: "8.1.3"
+    - name: Check SDK
+      run: |
+        ls
+    - name: Lint RenPy
+      uses: PaxlavaGames/renpy-lint@0.2.0
+      with:
+        path: "./testing"
 ```
 
 ## Mission
