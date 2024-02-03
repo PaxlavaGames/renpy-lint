@@ -69,7 +69,7 @@ jobs:
       with:
         version: "8.1.3"
     - name: Lint RenPy
-      uses: PaxlavaGames/renpy-lint@v0.2.0
+      uses: PaxlavaGames/renpy-lint@v0.3.0
 ```
 
 ### Run using last version (maybe unstable)
@@ -102,11 +102,8 @@ jobs:
       uses: PaxlavaGames/renpy-install@v0.1.2
       with:
         version: "8.1.3"
-    - name: Check SDK
-      run: |
-        ls
     - name: Lint RenPy
-      uses: PaxlavaGames/renpy-lint@0.2.0
+      uses: PaxlavaGames/renpy-lint@0.3.0
       with:
         path: "./testing"
 ```
@@ -123,7 +120,7 @@ Be free to use, fork, clone and contribute.
 ## Features
 
 Lint **RenPy** project
-To build **RenPy** project use `renpy-build`
+To build **RenPy** project use [renpy-build](https://github.com/marketplace/actions/renpy-build)
 
 ## Development Status
 
