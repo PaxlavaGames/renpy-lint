@@ -65,7 +65,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install RenPy
-      uses: PaxlavaGames/renpy-install@v0.1.2
+      uses: PaxlavaGames/renpy-install@v0.2.0
       with:
         version: "8.2.0"
     - name: Lint RenPy
@@ -99,7 +99,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install RenPy
-      uses: PaxlavaGames/renpy-install@v0.1.2
+      uses: PaxlavaGames/renpy-install@v0.2.0
       with:
         version: "8.2.0"
     - name: Lint RenPy
