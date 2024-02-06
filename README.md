@@ -67,9 +67,9 @@ jobs:
     - name: Install RenPy
       uses: PaxlavaGames/renpy-install@v0.1.2
       with:
-        version: "8.1.3"
+        version: "8.2.0"
     - name: Lint RenPy
-      uses: PaxlavaGames/renpy-lint@v0.3.0
+      uses: PaxlavaGames/renpy-lint@v0.4.0
 ```
 
 ### Run using last version (maybe unstable)
@@ -101,9 +101,9 @@ jobs:
     - name: Install RenPy
       uses: PaxlavaGames/renpy-install@v0.1.2
       with:
-        version: "8.1.3"
+        version: "8.2.0"
     - name: Lint RenPy
-      uses: PaxlavaGames/renpy-lint@0.3.0
+      uses: PaxlavaGames/renpy-lint@0.4.0
       with:
         path: "./testing"
 ```
@@ -124,6 +124,7 @@ To build **RenPy** project use [renpy-build](https://github.com/marketplace/acti
 
 ## Development Status
 
+This action was tested with **8.1.3** and **8.2.0** version.
 This is BETA Version. Be careful. If you find a bug or imagine a feature, please share.
 
 ## Examples
