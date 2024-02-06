@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        renpy-version: ["8.1", "8.2"]
+        renpy-version: ["8.1.3", "8.2.0"]
     steps:
     - uses: actions/checkout@v3
     - name: Install RenPy ${{ matrix.renpy-version }}
